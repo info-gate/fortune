@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>전문 사주팔자 및 운세 추천</title>
+  <base href="/fortune/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Adsense 광고 코드(상단) -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-1027074018337500",
+      enable_page_level_ads: true
+    });
+  </script>
+</head>
+<body>
+  <!-- 광고 위치 예시 (본문 상단) -->
+  <ins class="adsbygoogle"
+       style="display:block; text-align:center;"
+       data-ad-client="ca-pub-1027074018337500"
+       data-ad-slot="8590128967"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  <h2>전문 사주팔자 + 오늘의 운세</h2>
+  <form id="fortuneForm">
+    <label>이름 <input type="text" id="name" required></label>
+    <label>성별
+      <select id="gender" required>
+        <option value="male">남자</option>
+        <option value="female">여자</option>
+      </select>
+    </label>
+    <label>생년월일 <input type="date" id="birthdate" required></label>
+    <label>태어난 시 (0 ~ 23시)<input type="number" id="birthhour" min="0" max="23" required></label>
+    <button type="submit">풀이 보기</button>
+  </form>
+  <div id="result" class="result-card" style="display:none"></div>
+  <script src="fortune-data.js"></script>
+  <script src="fortune-utils.js"></script>
+  <script src="fortune-main.js"></script>
+</body>
+</html>
